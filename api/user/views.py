@@ -67,9 +67,9 @@ class UserView(ModelViewSet):
 
 def login(request):
     data = json.loads(request.body)
-    cellphone = data['cellphone']
+    username = data['username']
     password = data['password']
-    user = authenticate(username=cellphone, password=password)
+    user = authenticate(username=username, password=password)
     if user:
         return JsonResponse({'msg': '验证成功', 'status': 200})
     else:
