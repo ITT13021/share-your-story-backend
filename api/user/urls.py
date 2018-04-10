@@ -7,8 +7,8 @@ router = BulkRouter()
 
 router.register(r'province', ProvinceView, base_name='province')
 router.register(r'city', CityView, base_name='city')
-router.register(r'school', SchoolView, base_name='School')
-router.register(r'user', UserView, base_name='User')
+router.register(r'school', SchoolView, base_name='school')
+router.register(r'user', UserView, base_name='user')
 
 urlpatterns = router.urls
 

@@ -19,6 +19,9 @@ class ProvinceView(ModelViewSet):
     queryset = Province.objects.all()
     serializer_class = ProvinceSerializer
 
+    def list(self, request, *args, **kwargs):
+        return super(ProvinceView, self).list(request, *args, **kwargs)
+
 
 class CityView(ModelViewSet):
     queryset = City.objects.all()
@@ -70,7 +73,8 @@ def login(request):
     username = data['username']
     password = data['password']
     user = authenticate(username=username, password=password)
+    token = Token.objects.get_or_create(user=user)[0].key  # 创建token
     if user:
-        return JsonResponse({'msg': '验证成功', 'status': 200})
+        return JsonResponse({'msg': '验证成功', 'token': token, 'status': 200})
     else:
         return JsonResponse({'msg': '验证失败', 'status': 401})
