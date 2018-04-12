@@ -74,7 +74,8 @@ def login(request):
     password = data['password']
     user = authenticate(username=username, password=password)
     token = Token.objects.get_or_create(user=user)[0].key  # 创建token
+    user_information = json.dumps({"id": user.id, "username": user.username, "is_superuser": user.is_superuser, "date_joined": user.date_joined.strftime('%Y-%m-%d'), "cellphone": user.cellphone})
     if user:
-        return JsonResponse({'msg': '验证成功', 'token': token, 'status': 200})
+        return JsonResponse({'msg': '验证成功', 'token': token, 'user':  user_information,'status': 200})
     else:
         return JsonResponse({'msg': '验证失败', 'status': 401})

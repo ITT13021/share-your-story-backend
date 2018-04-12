@@ -30,6 +30,7 @@ class Products(AbstractAuditCreate):
     views = models.IntegerField(blank=True, null=True, help_text=_(u'浏览次数'))
     buy_price = models.IntegerField(blank=True, null=True, help_text=_(u'购买价格'))
     classification = models.ForeignKey(ProductsClassification, models.CASCADE, blank=True, null=True)
+    status = models.CharField(max_length=5, blank=True, null=True, help_text=_(u'状态{0：上架, 1: 下架}'))
 
     class Meta:
         app_label = 'products'
@@ -53,3 +54,5 @@ class ProductsMessage(AbstractAuditCreate):
     class Meta:
         app_label = 'products'
         db_table = 'products_message'
+
+
