@@ -21,6 +21,10 @@ class ProductsView(ModelViewSet):
     serializer_class = ProductsSerializer
 
     def list(self, request, *args, **kwargs):
+        type = request.GET.get("type", None)
+        if type == 'my':
+            self.pagination_class = CustomizeSetPagination
+            self.queryset = Products.objects.filter(create_user=request.user)
         return super(ProductsView, self).list(request, *args, **kwargs)
 
 

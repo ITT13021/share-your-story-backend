@@ -27,10 +27,20 @@ class CityView(ModelViewSet):
     queryset = City.objects.all()
     serializer_class = CitySerializer
 
+    def list(self, request, *args, **kwargs):
+        province = request.GET.get("province", None)
+        self.queryset = City.objects.filter(province=province).all()
+        return super(CityView, self).list(request, *args, **kwargs)
+
 
 class SchoolView(ModelViewSet):
     queryset = School.objects.all()
     serializer_class = SchoolSerializer
+
+    def list(self, request, *args, **kwargs):
+        city = request.GET.get("city", None)
+        self.queryset = School.objects.filter(city=city).all()
+        return super(SchoolView, self).list(request, *args, **kwargs)
 
 
 class UserView(ModelViewSet):

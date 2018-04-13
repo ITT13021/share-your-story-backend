@@ -3,7 +3,7 @@ from django.db import models
 
 from django.utils.translation import ugettext_lazy as _
 
-from api.user.models import User
+from api.user.models import User, School
 
 
 class AbstractAuditCreate(models.Model):
@@ -30,7 +30,8 @@ class Products(AbstractAuditCreate):
     views = models.IntegerField(blank=True, null=True, help_text=_(u'浏览次数'))
     buy_price = models.IntegerField(blank=True, null=True, help_text=_(u'购买价格'))
     classification = models.ForeignKey(ProductsClassification, models.CASCADE, blank=True, null=True)
-    status = models.CharField(max_length=5, blank=True, null=True, help_text=_(u'状态{0：上架, 1: 下架}'))
+    status = models.CharField(max_length=5, blank=True, null=True, default=0, help_text=_(u'状态{0：上架, 1: 下架}'))
+    school = models.ForeignKey(School, blank=True, null=True)
 
     class Meta:
         app_label = 'products'
