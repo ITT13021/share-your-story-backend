@@ -3,14 +3,12 @@ import json
 
 from django.contrib.auth import authenticate
 from django.contrib.auth.hashers import make_password
-from django.http import HttpResponse
 from django.http import JsonResponse
+from rest_framework import permissions
 from rest_framework import status
+from rest_framework.decorators import permission_classes
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
-
-from api.user.models import Province, School, City, User
-from rest_framework.views import APIView
 from api.user.serializers import *
 from rest_framework.authtoken.models import Token
 
@@ -78,13 +76,14 @@ class UserView(ModelViewSet):
         return self.res(usrname=user.username, status=status.HTTP_200_OK)
 
 
+@permission_classes((permissions.AllowAny,))
 def login(request):
     data = json.loads(request.body)
     username = data['username']
     password = data['password']
     user = authenticate(username=username, password=password)
     token = Token.objects.get_or_create(user=user)[0].key  # 创建token
-    user_information = json.dumps({"id": user.id, "username": user.username, "is_superuser": user.is_superuser, "date_joined": user.date_joined.strftime('%Y-%m-%d'), "cellphone": user.cellphone})
+    user_information = json.dumps({"id": user.id, "username": user.username, "is_superuser": user.is_superuser, "date_joined": user.date_joined.strftime('%Y-%m-%d'), "cellphone": user.cellphone, "sex": user.sex, "school": user.school.schoolname, "signature": user.signature, "token": token})
     if user:
         return JsonResponse({'msg': '验证成功', 'token': token, 'user':  user_information,'status': 200})
     else:
