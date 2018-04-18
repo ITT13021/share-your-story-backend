@@ -25,4 +25,4 @@ class SchoolSerializer(ModelSerializer):
 class UserSerializer(ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'username', 'cellphone')
+        fields = ('id', 'username', 'cellphone', 'sex', 'signature', 'school')

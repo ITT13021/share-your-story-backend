@@ -75,6 +75,9 @@ class UserView(ModelViewSet):
         token = Token.objects.get_or_create(user=user)[0].key  # 创建token
         return self.res(usrname=user.username, status=status.HTTP_200_OK)
 
+    def update(self, request, *args, **kwargs):
+        return super(UserView, self).update(request, *args, **kwargs)
+
 
 @permission_classes((permissions.AllowAny,))
 def login(request):
@@ -83,8 +86,13 @@ def login(request):
     password = data['password']
     user = authenticate(username=username, password=password)
     token = Token.objects.get_or_create(user=user)[0].key  # 创建token
-    user_information = json.dumps({"id": user.id, "username": user.username, "is_superuser": user.is_superuser, "date_joined": user.date_joined.strftime('%Y-%m-%d'), "cellphone": user.cellphone, "sex": user.sex, "school": user.school.schoolname, "signature": user.signature, "token": token})
+    user_information = json.dumps({"id": user.id, "username": user.username, "is_superuser": user.is_superuser,
+                                   "date_joined": user.date_joined.strftime('%Y-%m-%d'), "cellphone": int(user.cellphone),
+                                   "sex": user.sex, "school": user.school.schoolname, "signature": user.signature,
+                                   "token": token, "school_id": user.school.id, "school_name": user.school.schoolname,
+                                    "city_id": user.school.city.id, "city_name": user.school.city.name,
+                                   "province_id": user.school.city.province.id, "province_name": user.school.city.province.name})
     if user:
-        return JsonResponse({'msg': '验证成功', 'token': token, 'user':  user_information,'status': 200})
+        return JsonResponse({'msg': '验证成功', 'token': token, 'user': user_information, 'status': 200})
     else:
         return JsonResponse({'msg': '验证失败', 'status': 401})

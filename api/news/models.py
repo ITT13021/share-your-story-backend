@@ -14,20 +14,22 @@ class AbstractAuditCreate(models.Model):
 
 
 class News(AbstractAuditCreate):
-    TYPE_CHOICES = ((0, "全体用户"), (1, "部分用户"))
-    content = models.TextField(blank=True, null=True, help_text=_(u'系统消息内容'))
-    type = models.SmallIntegerField(choices=TYPE_CHOICES, blank=True, null=True, help_text=_(u'消息范围'))
-    read = models.BooleanField(default=False)
+    title = models.CharField(blank=True, null=True, max_length=12, help_text=_(u'消息标题'))
+    content = models.TextField(blank=True, null=True, help_text=_(u'消息内容'))
 
     class Meta:
         app_label = 'news'
         db_table = 'news'
 
 
-class NewsClassification(models.Model):
+class UserNews(models.Model):
+    TYPE_CHOICES = ((0, "全体用户"), (1, "部分用户"))
+
     news = models.ForeignKey(News)
     user = models.ForeignKey(User, blank=True, null=True)
+    type = models.SmallIntegerField(choices=TYPE_CHOICES, blank=True, null=True, help_text=_(u'消息范围'))
+    read = models.BooleanField(default=False)
 
     class Meta:
         app_label = 'news'
-        db_table = 'news_classifiction'
+        db_table = 'user_news'

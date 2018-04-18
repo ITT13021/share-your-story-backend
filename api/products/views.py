@@ -25,6 +25,8 @@ class ProductsView(ModelViewSet):
         if type == 'my':
             self.pagination_class = CustomizeSetPagination
             self.queryset = Products.objects.filter(create_user=request.user)
+        elif type == 'recommend':
+            self.queryset = Products.objects.order_by('-create_date').all()[:5]
         return super(ProductsView, self).list(request, *args, **kwargs)
 
 
@@ -51,7 +53,6 @@ class ProductsCollectView(ModelViewSet):
         return super(ProductsCollectView, self).create(request, *args, **kwargs)
 
 
-@permission_classes((permissions.IsAuthenticated,))
 class ProductsMessageView(ModelViewSet):
     queryset = ProductsMessage.objects.all()
     serializer_class = ProductsMessageSerializer

@@ -3,7 +3,7 @@
 from rest_framework.serializers import ModelSerializer
 
 from api.common.mixins import AuditSerializerMixin
-from api.news.models import NewsClassification, News
+from api.news.models import News, UserNews
 from api.user.serializers import UserSerializer
 
 
@@ -15,7 +15,7 @@ class NewsSerializer(AuditSerializerMixin, ModelSerializer):
         fields = '__all__'
 
 
-class NewsClassificationSerializer(ModelSerializer):
+class UserNewsSerializer(ModelSerializer):
     class Meta:
-        model = NewsClassification
+        model = UserNews
         fields = '__all__'
