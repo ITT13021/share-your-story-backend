@@ -1,5 +1,6 @@
 Django==1.10
 django-cors-headers==2.1.0
+django-filter==1.1.0
 djangorestframework==3.7.7
 djangorestframework-bulk==0.2.1
 PyMySQL==0.7.9

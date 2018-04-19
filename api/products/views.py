@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
+from itertools import chain
+
+import itertools
 from django.http import JsonResponse
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
 from rest_framework import permissions
 from rest_framework.decorators import permission_classes
 from rest_framework.pagination import PageNumberPagination
@@ -19,6 +24,9 @@ class CustomizeSetPagination(PageNumberPagination):
 class ProductsView(ModelViewSet):
     queryset = Products.objects.all()
     serializer_class = ProductsSerializer
+    filter_backends = (DjangoFilterBackend, filters.SearchFilter)
+    filter_fields = ('classification',)
+    search_fields = ('name',)
 
     def list(self, request, *args, **kwargs):
         type = request.GET.get("type", None)
@@ -27,6 +35,13 @@ class ProductsView(ModelViewSet):
             self.queryset = Products.objects.filter(create_user=request.user)
         elif type == 'recommend':
             self.queryset = Products.objects.order_by('-create_date').all()[:5]
+        elif type == 'home':
+            self.pagination_class = None
+            books = Products.objects.filter(classification=2).all()[:12].values_list('id', flat=True)
+            electric = Products.objects.filter(classification=1).all()[:12].values_list('id', flat=True)
+            other = Products.objects.filter(classification=3).all()[:12].values_list('id', flat=True)
+            ids = [i for i in books] + [i for i in electric]+ [i for i in other]
+            self.queryset = Products.objects.filter(pk__in=ids).all()
         return super(ProductsView, self).list(request, *args, **kwargs)
 
 
