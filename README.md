@@ -25,6 +25,7 @@
 ![这里写图片描述](https://img-blog.csdn.net/20180421144128283?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lUVDEzMDIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 **5. 使用**
+
 使用PyCharm编辑器
 pip install -r requirements.txt
 
