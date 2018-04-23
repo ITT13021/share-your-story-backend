@@ -87,11 +87,11 @@ def login(request):
     user = authenticate(username=username, password=password)
     token = Token.objects.get_or_create(user=user)[0].key  # 创建token
     user_information = json.dumps({"id": user.id, "username": user.username, "is_superuser": user.is_superuser,
-                                   "date_joined": user.date_joined.strftime('%Y-%m-%d'), "cellphone": int(user.cellphone),
-                                   "sex": user.sex, "school": user.school.schoolname, "signature": user.signature,
-                                   "token": token, "school_id": user.school.id, "school_name": user.school.schoolname,
-                                    "city_id": user.school.city.id, "city_name": user.school.city.name,
-                                   "province_id": user.school.city.province.id, "province_name": user.school.city.province.name})
+                                   "date_joined": user.date_joined.strftime('%Y-%m-%d'), "cellphone": int(user.cellphone) if user.cellphone else None,
+                                   "sex": user.sex, "school": user.school.schoolname if user.school else None, "signature": user.signature,
+                                   "token": token, "school_id": user.school.id  if user.school else None, "school_name": user.school.schoolname  if user.school else None,
+                                    "city_id": user.school.city.id  if user.school else None, "city_name": user.school.city.name  if user.school else None,
+                                   "province_id": user.school.city.province.id  if user.school else None, "province_name": user.school.city.province.name  if user.school else None})
     if user:
         return JsonResponse({'msg': '验证成功', 'token': token, 'user': user_information, 'status': 200})
     else:

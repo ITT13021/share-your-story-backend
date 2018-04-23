@@ -34,12 +34,12 @@ class ProductsView(ModelViewSet):
             self.pagination_class = CustomizeSetPagination
             self.queryset = Products.objects.filter(create_user=request.user)
         elif type == 'recommend':
-            self.queryset = Products.objects.order_by('-create_date').all()[:5]
+            self.queryset = Products.objects.filter(status=0).order_by('-create_date').all()[:5]
         elif type == 'home':
             self.pagination_class = None
-            books = Products.objects.filter(classification=2).all()[:12].values_list('id', flat=True)
-            electric = Products.objects.filter(classification=1).all()[:12].values_list('id', flat=True)
-            other = Products.objects.filter(classification=3).all()[:12].values_list('id', flat=True)
+            books = Products.objects.filter(classification=2, status=0).all()[:12].values_list('id', flat=True)
+            electric = Products.objects.filter(classification=1, status=0).all()[:12].values_list('id', flat=True)
+            other = Products.objects.filter(classification=3, status=0).all()[:12].values_list('id', flat=True)
             ids = [i for i in books] + [i for i in electric]+ [i for i in other]
             self.queryset = Products.objects.filter(pk__in=ids).all()
         return super(ProductsView, self).list(request, *args, **kwargs)
