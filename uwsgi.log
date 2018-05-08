@@ -1,0 +1,176 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Tue May  8 07:14:24 2018] ***
+compiled with version: 6.3.0 20170516 on 08 May 2018 06:02:09
+os: Linux-4.14.0-0.bpo.3-amd64 #1 SMP Debian 4.14.13-1~bpo9+1 (2018-01-14)
+nodename: djq-1
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/share-your-story/share-your-story-backend
+detected binary path: /home/dongjqcn/Env/shareyourstory/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /var/www/share-your-story/share-your-story-backend
+your processes number limit is 6676
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+Python version: 2.7.13 (default, Nov 24 2017, 17:33:09)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x560b4f479a50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560b4f479a50 pid: 31713 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 31713)
+spawned uWSGI worker 1 (pid: 31715, cores: 2)
+spawned uWSGI worker 2 (pid: 31716, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /var/www/share-your-story/share-your-story-backend
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (127.0.0.1:9090)
+running /home/dongjqcn/Env/shareyourstory/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.17 (64bit) on [Tue May  8 08:01:14 2018] ***
+compiled with version: 6.3.0 20170516 on 08 May 2018 06:02:09
+os: Linux-4.14.0-0.bpo.3-amd64 #1 SMP Debian 4.14.13-1~bpo9+1 (2018-01-14)
+nodename: djq-1
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/share-your-story/share-your-story-backend
+detected binary path: /home/dongjqcn/Env/shareyourstory/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /var/www/share-your-story/share-your-story-backend
+your processes number limit is 6676
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:9090 fd 3
+Python version: 2.7.13 (default, Nov 24 2017, 17:33:09)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x556adce44520
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556adce44520 pid: 31713 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 31713)
+spawned uWSGI worker 1 (pid: 32136, cores: 2)
+spawned uWSGI worker 2 (pid: 32137, cores: 2)
+Tue May  8 08:01:42 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue May  8 08:01:42 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue May  8 08:01:42 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue May  8 08:01:42 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Tue May  8 08:14:58 2018] ***
+compiled with version: 6.3.0 20170516 on 08 May 2018 06:02:09
+os: Linux-4.14.0-0.bpo.3-amd64 #1 SMP Debian 4.14.13-1~bpo9+1 (2018-01-14)
+nodename: djq-1
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/share-your-story/share-your-story-backend
+detected binary path: /home/dongjqcn/Env/shareyourstory/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /var/www/share-your-story/share-your-story-backend
+your processes number limit is 6676
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+Python version: 2.7.13 (default, Nov 24 2017, 17:33:09)  [GCC 6.3.0 20170516]
+Python main interpreter initialized at 0x55e7eb894a50
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250128 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e7eb894a50 pid: 32264 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 32264)
+spawned uWSGI worker 1 (pid: 32266, cores: 2)
+spawned uWSGI worker 2 (pid: 32267, cores: 2)
+2018-05-08 08:22:34,891 - django.db.backends - DEBUG - (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-05-08 08:22:34,891 - django.db.backends - DEBUG - (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-05-08 08:22:34,893 - django.db.backends - DEBUG - (0.002) SELECT COUNT(*) AS `__count` FROM `Products_classification`; args=()
+2018-05-08 08:22:34,895 - django.db.backends - DEBUG - (0.004) SELECT VERSION(); args=None
+2018-05-08 08:22:34,898 - django.db.backends - DEBUG - (0.001) SELECT `products`.`id` FROM `products` WHERE (`products`.`status` = '0' AND `products`.`classification_id` = 2) LIMIT 12; args=(u'0', 2)
+[pid: 32267|app: 0|req: 2/1] 117.28.133.195 () {44 vars in 790 bytes} [Tue May  8 08:22:34 2018] GET /api/products/productsclassification/?v=1 => generated 52 bytes in 143 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+2018-05-08 08:22:34,903 - django.db.backends - DEBUG - (0.001) SELECT `products`.`id` FROM `products` WHERE (`products`.`status` = '0' AND `products`.`classification_id` = 1) LIMIT 12; args=(u'0', 1)
+2018-05-08 08:22:34,903 - django.db.backends - DEBUG - (0.000) SELECT `products`.`id` FROM `products` WHERE (`products`.`status` = '0' AND `products`.`classification_id` = 3) LIMIT 12; args=(u'0', 3)
+2018-05-08 08:22:34,909 - django.db.backends - DEBUG - (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-05-08 08:22:34,911 - django.db.backends - DEBUG - (0.001) SELECT VERSION(); args=None
+[pid: 32267|app: 0|req: 2/2] 117.28.133.195 () {44 vars in 782 bytes} [Tue May  8 08:22:34 2018] GET /api/products/products/?v=1&type=home => generated 2 bytes in 166 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+2018-05-08 08:22:34,913 - django.db.backends - DEBUG - (0.001) SELECT COUNT(*) FROM (SELECT `products`.`id` AS Col1 FROM `products` WHERE `products`.`status` = '0' ORDER BY `products`.`create_date` DESC LIMIT 5) subquery; args=(u'0',)
+[pid: 32266|app: 0|req: 1/3] 117.28.133.195 () {44 vars in 792 bytes} [Tue May  8 08:22:34 2018] GET /api/products/products/?v=1&type=recommend => generated 52 bytes in 164 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+2018-05-08 08:27:52,042 - django.db.backends - DEBUG - (0.000) SELECT VERSION(); args=None
+2018-05-08 08:27:52,044 - django.db.backends - DEBUG - (0.001) SELECT `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `user` WHERE `user`.`username` = '董建强'; args=(u'\u8463\u5efa\u5f3a',)
+2018-05-08 08:27:52,074 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created` FROM `authtoken_token` WHERE `authtoken_token`.`user_id` = 2; args=(2,)
+[pid: 32267|app: 0|req: 3/4] 117.28.133.195 () {50 vars in 883 bytes} [Tue May  8 08:27:52 2018] POST /api/user/login => generated 492 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+2018-05-08 08:27:52,181 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:27:52,183 - django.db.backends - DEBUG - (0.000) SELECT `products`.`id` FROM `products` WHERE (`products`.`status` = '0' AND `products`.`classification_id` = 2) LIMIT 12; args=(u'0', 2)
+2018-05-08 08:27:52,184 - django.db.backends - DEBUG - (0.000) SELECT `products`.`id` FROM `products` WHERE (`products`.`status` = '0' AND `products`.`classification_id` = 1) LIMIT 12; args=(u'0', 1)
+2018-05-08 08:27:52,184 - django.db.backends - DEBUG - (0.000) SELECT `products`.`id` FROM `products` WHERE (`products`.`status` = '0' AND `products`.`classification_id` = 3) LIMIT 12; args=(u'0', 3)
+[pid: 32267|app: 0|req: 4/5] 117.28.133.195 () {48 vars in 1406 bytes} [Tue May  8 08:27:52 2018] GET /api/products/products/?v=1&type=home => generated 2 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+2018-05-08 08:27:52,237 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:27:52,245 - django.db.backends - DEBUG - (0.000) SELECT COUNT(*) FROM (SELECT `products`.`id` AS Col1 FROM `products` WHERE `products`.`status` = '0' ORDER BY `products`.`create_date` DESC LIMIT 5) subquery; args=(u'0',)
+2018-05-08 08:27:52,247 - django.db.backends - DEBUG - (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2018-05-08 08:27:52,247 - django.db.backends - DEBUG - (0.000) SELECT VERSION(); args=None
+[pid: 32267|app: 0|req: 5/6] 117.28.133.195 () {48 vars in 1416 bytes} [Tue May  8 08:27:52 2018] GET /api/products/products/?v=1&type=recommend => generated 52 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+2018-05-08 08:27:52,249 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:27:52,250 - django.db.backends - DEBUG - (0.000) SELECT COUNT(*) AS `__count` FROM `Products_classification`; args=()
+[pid: 32266|app: 0|req: 2/7] 117.28.133.195 () {48 vars in 1414 bytes} [Tue May  8 08:27:52 2018] GET /api/products/productsclassification/?v=1 => generated 52 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+2018-05-08 08:27:55,850 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:27:55,851 - django.db.backends - DEBUG - (0.000) SELECT COUNT(*) AS `__count` FROM `Products_classification`; args=()
+[pid: 32267|app: 0|req: 6/8] 117.28.133.195 () {48 vars in 1414 bytes} [Tue May  8 08:27:55 2018] GET /api/products/productsclassification/?v=1 => generated 52 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+2018-05-08 08:27:55,916 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:27:55,918 - django.db.backends - DEBUG - (0.001) SELECT COUNT(*) AS `__count` FROM `Province`; args=()
+[pid: 32266|app: 0|req: 3/9] 117.28.133.195 () {48 vars in 1378 bytes} [Tue May  8 08:27:55 2018] GET /api/user/province/?v=1 => generated 52 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+[pid: 32267|app: 0|req: 7/10] 117.28.133.195 () {48 vars in 1374 bytes} [Tue May  8 08:28:00 2018] GET /api/news/news?page=1 => generated 0 bytes in 1 msecs (HTTP/1.1 301) 2 headers in 108 bytes (1 switches on core 1)
+2018-05-08 08:28:00,763 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:28:00,766 - django.db.backends - DEBUG - (0.001) SELECT COUNT(*) AS `__count` FROM `news` WHERE `news`.`id` IN (SELECT U0.`news_id` FROM `user_news` U0 WHERE (U0.`type` = 0 OR U0.`user_id` = 2)); args=(0, 2)
+[pid: 32266|app: 0|req: 4/11] 117.28.133.195 () {48 vars in 1376 bytes} [Tue May  8 08:28:00 2018] GET /api/news/news/?page=1 => generated 52 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+2018-05-08 08:28:01,995 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:28:01,998 - django.db.backends - DEBUG - (0.001) SELECT COUNT(*) AS `__count` FROM `products` WHERE `products`.`create_user_id` = 2; args=(2,)
+[pid: 32267|app: 0|req: 8/12] 117.28.133.195 () {48 vars in 1416 bytes} [Tue May  8 08:28:01 2018] GET /api/products/products/?v=1&page=1&type=my => generated 52 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+2018-05-08 08:28:02,544 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:28:02,546 - django.db.backends - DEBUG - (0.001) SELECT COUNT(*) AS `__count` FROM `products_collect` WHERE `products_collect`.`user_id` = 2; args=(2,)
+[pid: 32266|app: 0|req: 5/13] 117.28.133.195 () {48 vars in 1414 bytes} [Tue May  8 08:28:02 2018] GET /api/products/productscollect/?v=1&page=1 => generated 52 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+[pid: 32267|app: 0|req: 9/14] 117.28.133.195 () {48 vars in 1374 bytes} [Tue May  8 08:28:03 2018] GET /api/news/news?page=1 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 108 bytes (1 switches on core 1)
+2018-05-08 08:28:03,087 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:28:03,089 - django.db.backends - DEBUG - (0.000) SELECT COUNT(*) AS `__count` FROM `news` WHERE `news`.`id` IN (SELECT U0.`news_id` FROM `user_news` U0 WHERE (U0.`type` = 0 OR U0.`user_id` = 2)); args=(0, 2)
+[pid: 32266|app: 0|req: 6/15] 117.28.133.195 () {48 vars in 1376 bytes} [Tue May  8 08:28:03 2018] GET /api/news/news/?page=1 => generated 52 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+2018-05-08 08:28:05,743 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:28:05,747 - django.db.backends - DEBUG - (0.000) SELECT COUNT(*) AS `__count` FROM `products` WHERE `products`.`create_user_id` = 2; args=(2,)
+[pid: 32266|app: 0|req: 7/16] 117.28.133.195 () {48 vars in 1416 bytes} [Tue May  8 08:28:05 2018] GET /api/products/products/?v=1&page=1&type=my => generated 52 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+2018-05-08 08:28:06,503 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:28:06,505 - django.db.backends - DEBUG - (0.000) SELECT COUNT(*) AS `__count` FROM `products_collect` WHERE `products_collect`.`user_id` = 2; args=(2,)
+[pid: 32267|app: 0|req: 10/17] 117.28.133.195 () {48 vars in 1414 bytes} [Tue May  8 08:28:06 2018] GET /api/products/productscollect/?v=1&page=1 => generated 52 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+[pid: 32267|app: 0|req: 11/18] 117.28.133.195 () {48 vars in 1374 bytes} [Tue May  8 08:28:06 2018] GET /api/news/news?page=1 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 108 bytes (1 switches on core 0)
+2018-05-08 08:28:06,955 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:28:06,958 - django.db.backends - DEBUG - (0.000) SELECT COUNT(*) AS `__count` FROM `news` WHERE `news`.`id` IN (SELECT U0.`news_id` FROM `user_news` U0 WHERE (U0.`type` = 0 OR U0.`user_id` = 2)); args=(0, 2)
+[pid: 32266|app: 0|req: 8/19] 117.28.133.195 () {48 vars in 1376 bytes} [Tue May  8 08:28:06 2018] GET /api/news/news/?page=1 => generated 52 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+[pid: 32267|app: 0|req: 12/20] 117.28.133.195 () {48 vars in 1374 bytes} [Tue May  8 08:28:07 2018] GET /api/news/news?page=1 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 108 bytes (1 switches on core 0)
+2018-05-08 08:28:07,340 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:28:07,342 - django.db.backends - DEBUG - (0.000) SELECT COUNT(*) AS `__count` FROM `news` WHERE `news`.`id` IN (SELECT U0.`news_id` FROM `user_news` U0 WHERE (U0.`type` = 0 OR U0.`user_id` = 2)); args=(0, 2)
+[pid: 32266|app: 0|req: 9/21] 117.28.133.195 () {48 vars in 1376 bytes} [Tue May  8 08:28:07 2018] GET /api/news/news/?page=1 => generated 52 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+2018-05-08 08:49:44,862 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:49:44,864 - django.db.backends - DEBUG - (0.001) SELECT `authtoken_token`.`key`, `authtoken_token`.`user_id`, `authtoken_token`.`created`, `user`.`id`, `user`.`password`, `user`.`last_login`, `user`.`is_superuser`, `user`.`first_name`, `user`.`last_name`, `user`.`email`, `user`.`is_staff`, `user`.`is_active`, `user`.`date_joined`, `user`.`username`, `user`.`cellphone`, `user`.`sex`, `user`.`signature`, `user`.`school_id`, `user`.`authority` FROM `authtoken_token` INNER JOIN `user` ON (`authtoken_token`.`user_id` = `user`.`id`) WHERE `authtoken_token`.`key` = '8e8517bb593122c35452a70017b90f66cd159e8f'; args=(u'8e8517bb593122c35452a70017b90f66cd159e8f',)
+2018-05-08 08:49:44,865 - django.db.backends - DEBUG - (0.002) SELECT COUNT(*) AS `__count` FROM `Province`; args=()
+2018-05-08 08:49:44,866 - django.db.backends - DEBUG - (0.001) SELECT COUNT(*) AS `__count` FROM `Products_classification`; args=()
+[pid: 32267|app: 0|req: 14/22] 117.28.133.195 () {44 vars in 1325 bytes} [Tue May  8 08:49:44 2018] GET /api/user/province/?v=1 => generated 52 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+[pid: 32267|app: 0|req: 14/23] 117.28.133.195 () {44 vars in 1361 bytes} [Tue May  8 08:49:44 2018] GET /api/products/productsclassification/?v=1 => generated 52 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)

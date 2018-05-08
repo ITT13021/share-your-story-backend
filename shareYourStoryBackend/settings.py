@@ -144,7 +144,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'shareyourstory',
         'USER': 'root',
-        'PASSWORD': 'djq543266',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
     }
